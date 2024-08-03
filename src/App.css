@@ -1,42 +1,100 @@
-#root {
-  max-width: 1280px;
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+}
+
+
+
+button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  background-image: linear-gradient(to right, #711F8D, #A818DA);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0px 4px 3px #ccc;
+}
+
+.input-area .container {
+  display: flex;
+  gap: 30px;
+}
+
+.meme-container {
+ 
+  margin-bottom: 20px;
+  width: 50%;
+}
+.meme-container input {
+  width: 100%;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-weight: bold;
+  height: 65px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo img {
+  height: 26px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav {
+  margin-bottom: 30px;
+  background-image: linear-gradient(to right, #672280 , #A626D3);
 }
 
-.card {
-  padding: 2em;
+.nav .container {
+  display: flex;
+    align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.nav .container p.project-name {
+  margin-left: auto;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.top-text {
+  margin-top: 0;
+  margin-bottom: auto;
+ 
+}
+
+.bottom-text {
+  margin-bottom: 0;
+  
+
+}
+
+#image-container {
+  width: 100% ;
+  height: 400px;
+  margin-top: 20px;
+  border:1px red solid;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#image-container p {
+  -webkit-text-stroke: 1.5px black;
+  text-stroke: 1.5px #000;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3rem;
+  
 }
