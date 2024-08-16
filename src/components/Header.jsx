@@ -4,20 +4,16 @@ import Logo from '../assets/logo.png'
 function Header(){
 //can this be split in to a funtion
 
-
+   
 
 
 
     return (
-        <div className="row nav">
-            <div className="container">
-                <div className="logo">
-                    <img src={Logo} /> 
-                    <p>Meme Generator</p>
-                </div>
-                <p className="project-name">React Course Project 3</p>
-            </div>
-        </div>
+         <header className="header">
+            <img className="header--image" src={Logo} />
+            <h2 className="header--title">Meme Generator</h2>
+            <h4 className="header--project">React Course = Project 3</h4>
+         </header>
     )
 }
 
