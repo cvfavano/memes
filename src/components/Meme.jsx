@@ -1,10 +1,34 @@
-import React from 'react'
+import React, {useState} from 'react'
+import memesData from '../memesData.js';
 
 function Meme() {
+      const [image, setImage] = useState('');
+     let currentImage ='';
+    function handleClick() {
+     
+      
+
+       function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        const data = memesData.data.memes;
+
+        const dataLength = Object.keys(data).length 
+        
+        const imageNumber = getRandomInt(dataLength);
+        
+        console.log(data[imageNumber].url)
+        setImage(data[imageNumber].url);
+
+    }
+        
+    
+
+    
     return (
         <main>
-            <div className="container">
-        <form>
+           
+        <div className = 'form'>
             <label>Top Text<br/>
             <input 
                 type="text" 
@@ -19,9 +43,10 @@ function Meme() {
                 className="form-input"
             />
             </label>
-            <button>Get a mew meme image 🖼</button>
-        </form>
+            <button className = "form-button" onClick={handleClick} >Get a new meme image 🖼</button>
         </div>
+        <img src = {image }width="100%" />
+       
         </main>
         
     )

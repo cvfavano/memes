@@ -1,12 +1,13 @@
 import React from "react";
 import { useState } from "react";
-
+import Data from './memesData.js';
 
 function MemeText(props) {
     const [value, setValue] = useState("");
     
+    
     function handleChange(e) {
-        setValue(e.target.value);
+        
     }
 
     return (
